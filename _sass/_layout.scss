@@ -20,7 +20,7 @@
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: $text-color;
     }
 }
 
@@ -187,6 +187,7 @@
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
+    color: #FFFFFF;
 }
 
 .post-link {
