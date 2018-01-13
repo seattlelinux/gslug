@@ -9,7 +9,7 @@
 title: GSLUG
 email: your-email@domain.com
 description: the Greater Seattle Linux Users Group
-baseurl: "/gslug" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://gslug.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
