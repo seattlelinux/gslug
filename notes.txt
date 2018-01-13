@@ -1,0 +1,8 @@
+to get lets encrypt working followed instructions here:
+
+https://about.gitlab.com/2016/04/11/tutorial-securing-your-gitlab-pages-with-tls-and-letsencrypt/
+
+and suggestion here about adding trailing slash:
+
+https://stackoverflow.com/questions/39196685/gitlab-pages-and-jekyll-issue-with-set-up-tls-lets-encrypted
+

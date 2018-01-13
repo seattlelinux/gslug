@@ -21,3 +21,4 @@ exclude:
   - Rakefile
   - Gemfile
   - Gemfile.lock
+  - notes.txt
