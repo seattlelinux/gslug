@@ -7,9 +7,4 @@ RUN apt-get update && apt-get install -y \
     ruby \
     ruby-dev
 
-WORKDIR /tmp
-
-COPY Gemfile .
-COPY Gemfile.lock .
 RUN gem install bundler 
-RUN bundle install
