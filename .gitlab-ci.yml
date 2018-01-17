@@ -6,7 +6,7 @@ variables:
 pages:
   script:
   - bundle install
-  - bundle exec jekyll build -d public
+  - bundle exec jekyll build -s source -d public
   artifacts:
     paths:
     - public
