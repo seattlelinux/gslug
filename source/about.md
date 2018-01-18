@@ -10,9 +10,6 @@ Our meetings are free to attend & open to the public. All ages are welcome. We t
 
 # Other Notable Events
 * Bellevue Linux Users Group (BELUG) second Tuesday of every month at 7:00 p.m
-* LinuxFest Northwest 2015 April 25 & 26 in Bellingham, WA
-* LinuxCon North America August 17 - 19 at the Sheraton Seattle
-* SeaGL - Seattle GNU/Linux Conference October 23 & 24 at Seattle Central College
 * (Please add any Linux-related (local or regional) upcoming events here!)
 
 
