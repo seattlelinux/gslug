@@ -10,6 +10,7 @@ Our meetings are free to attend & open to the public. All ages are welcome. We t
 
 # Other Notable Events
 * Bellevue Linux Users Group (BELUG) second Tuesday of every month at 7:00 p.m
+* April 28 - 29, 2018:  [LinuxFest Northwest 2018](https://www.linuxfestnorthwest.org)
 * (Please add any Linux-related (local or regional) upcoming events here!)
 
 
