@@ -205,6 +205,14 @@ pre {
     }
 }
 
+.gslugblue {
+    background-color: $slug-background-color;
+}
+
+.soften {
+    box-shadow: 0 0 10px 10px $slug-background-color ;
+}
+
 .center {
     text-align: center;
 }
