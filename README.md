@@ -1,7 +1,7 @@
-![Build Status](https://gitlab.com/pages/jekyll/badges/master/build.svg)
-![Jekyll Version](https://img.shields.io/gem/v/jekyll.svg)
+<!-- ![Build Status](https://gitlab.com/pages/jekyll/badges/master/build.svg) -->
+<!-- ![Jekyll Version](https://img.shields.io/gem/v/jekyll.svg) -->
 
----
+Greater Seattle Linux User Group website.  View it live at https://gslug.org
 
 Example [Jekyll] website using GitLab Pages.  View it live at https://pages.gitlab.io/jekyll
 
