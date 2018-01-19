@@ -13,4 +13,4 @@ Our meetings are free to attend & open to the public. All ages are welcome. We t
 * April 28 - 29, 2018:  [LinuxFest Northwest 2018](https://www.linuxfestnorthwest.org)
 * (Please add any Linux-related (local or regional) upcoming events here!)
 
-
+[x](/x)
