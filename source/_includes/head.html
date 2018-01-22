@@ -8,12 +8,11 @@
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="canonical" href="https://gslug.org">
   <script type="text/javascript">
-    if (("gslug.org" === window.location.host) && (window.location.protocol !== 'https:')) {
+if (("{{ site.domain }}" === window.location.host) && (window.location.protocol !== 'https:')) {
         window.location = window.location.toString().replace(/^http:/, "https:");
-    } else if ("www.gslug.org" === window.location.host) {
-        window.location = window.location.toString().replace(/^(http|https):\/\/www\.gslug\.org/, "https://gslug.org");
+} else if ("www." + "{{ site.domain }}" === window.location.host) {
+        window.location = window.location.toString().replace(/^(http|https):\/\/www\./, "https://");
     }
   </script>
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
