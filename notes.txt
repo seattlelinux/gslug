@@ -1,8 +1,21 @@
-to get lets encrypt working followed instructions here:
+2018-01-13
+    to get lets encrypt working followed instructions here:
 
-https://about.gitlab.com/2016/04/11/tutorial-securing-your-gitlab-pages-with-tls-and-letsencrypt/
+    https://about.gitlab.com/2016/04/11/tutorial-securing-your-gitlab-pages-with-tls-and-letsencrypt/
 
-and suggestion here about adding trailing slash:
+    and suggestion here about adding trailing slash:
 
-https://stackoverflow.com/questions/39196685/gitlab-pages-and-jekyll-issue-with-set-up-tls-lets-encrypted
+    https://stackoverflow.com/questions/39196685/gitlab-pages-and-jekyll-issue-with-set-up-tls-lets-encrypted
+
+2018-01-22
+    Added javascript snippet in _includes/head.html to default to https://gslug.org
+
+    See links here: https://gitlab.com/gitlab-org/gitlab-ee/issues/467 for
+    details on how to do this.
+
+
+    Added ssl certs for www.gslug.org using same technique as used for gslug.org on 2018-01-13 .
+
+
+
 
