@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Lists
-permalink: /lists/
+title: Contact
+permalink: /contact/
 ---
 
 # Mailing Lists
