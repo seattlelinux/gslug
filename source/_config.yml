@@ -7,7 +7,7 @@
 
 # Site settings
 title: GSLUG
-email: seattlelinux@gmail.com
+# email: seattlelinux@gmail.com
 description: the Greater Seattle Linux Users Group
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://gslug.org" # the base hostname & protocol for your site
