@@ -7,7 +7,7 @@ tags:
 ---
 # Next GSLUG Monthly Meeting
 * When: Saturday, February 10, 2018 from 12:00 pm to 3:00 pm
-* Where: North Seattle College, Education Building, room TBD
+* Where: North Seattle College, Education Building, room ED1080
 * Topic: General Discussion
 
 If you drive, take n 92nd and turn north into the easternmost parking lot.    There is usually plenty of parking even when there is real estate class on same top floor of Education building which is west of parking.
