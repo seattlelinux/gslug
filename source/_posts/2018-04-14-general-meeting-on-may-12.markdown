@@ -3,12 +3,12 @@ layout: post
 title: "General Meeting on May 12"
 date: 2018-04-14 19:14:58 +0000
 published: true
+show_synopsis: true
 tags:
 ---
-# Next GSLUG Monthly Meeting
-* When: Saturday, May 12, 2018 from 12:00 PM to 3:00 PM
-* Where: North Seattle College, Education Building, room 1840A
-* Topic: General Discussion
+* Topic: How to use gitlab.com, Jekyll, and letsencrypt.org to quickly build a secure, static website at (almost) no cost.  The tools and techniques to be discussed are the same tools and techniques used to maintain gslug.org .
+* When: Saturday, May 12, 2018 from 12:00 PM to 3:00 PM .
+* Where: North Seattle College, Education Building, room 1840A .
 
 If you drive, take N 92nd and turn north into the easternmost parking lot.  There is usually plenty of parking.
 

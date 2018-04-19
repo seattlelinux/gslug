@@ -16,6 +16,10 @@ url: "https://gslug.org" # the base hostname & protocol for your site
 gitlab_username:  seattlelinux
 irc_username:  gslug
 
+# Excerpt Word Length
+# Truncates the excerpt to the specified number of words on the index page
+excerpt_length: 50
+
 # Build settings
 markdown: kramdown
 exclude:
