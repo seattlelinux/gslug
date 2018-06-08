@@ -7,7 +7,6 @@ show_synopsis: true
 tags:
 ---
 * Archis Gore will present an overview of various aspects of a compiler including parsers, scanners, and code generation.  
-* Mark Polyakov will talk about "Anypaste", a general purpose file sharing utility.
 * When: Saturday, June 9, 2018 from 12:00 PM to 3:00 PM .
 * Where: North Seattle College, Education Building, room 1840A .
 
