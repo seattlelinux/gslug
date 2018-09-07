@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Contact
-permalink: /contact/
+title: Mailing Lists
+permalink: /mailinglists/
 ---
-
-# Mailing Lists
 These are various GSLUG mailing lists used for GSLUG announcements, general discussion, and organization. In addition to the lists, real-time communication takes place on Internet Relay Chat (IRC).
 
 If you have any problems subscribing or un-subscribing from these lists, please notify Bri Hatch at <mailto:bri@ifokr.org>.
