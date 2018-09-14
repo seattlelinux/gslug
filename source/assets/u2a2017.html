@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.0.3.2 (Linux)"/>
+	<meta name="author" content="fnharvey "/>
+	<meta name="created" content="2018-08-01T17:37:17.627843500"/>
+	<meta name="changedby" content="fnharvey "/>
+	<meta name="changed" content="2018-08-18T16:26:04.147034700"/>
+	<style type="text/css">
+		@page { margin: 0.79in }
+		p { margin-bottom: 0.1in; direction: ltr; color: #000000; line-height: 120%; orphans: 2; widows: 2 }
+		p.western { font-family: "Nimbus Roman No9 L", "Times New Roman", serif; font-size: 12pt; so-language: en-US }
+		p.cjk { font-family: "WenQuanYi Micro Hei"; font-size: 12pt; so-language: zh-CN }
+		p.ctl { font-family: "DejaVu Sans"; font-size: 12pt; so-language: hi-IN }
+		pre { direction: ltr; color: #000000; orphans: 2; widows: 2 }
+		pre.western { font-family: "Nimbus Mono L", "Courier New", monospace; so-language: en-US }
+		pre.cjk { font-family: "Nimbus Mono L", "Courier New", monospace; so-language: zh-CN }
+		pre.ctl { font-family: "Nimbus Mono L", "Courier New", monospace; so-language: hi-IN }
+	</style>
+</head>
+<body lang="en-US" text="#000000" dir="ltr">
+<p class="western" style="margin-bottom: 0in; line-height: 100%"><font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">Xubuntu
+12.04 to antiX 16.2</font></font></p>
+<p class="western" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p class="western" style="margin-bottom: 0in; line-height: 100%"><font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">OUTLINE:
+ my attempt at using systemd, why I reject it, how I selected antiX,
+minor snags I overcame, my conclusion</font></font></p>
+<p class="western" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p class="western" style="margin-bottom: 0in; font-weight: normal; line-height: 100%">
+<font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">WHY
+I HAVE TRIED TO AVOID SYSTEMD</font></font></p>
+<pre class="western"><font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">Sometime in 2015 I tried either fedora or some other distro using systemd on a old (2003) laptop and it wouldn't work properly even though the old laptop had been running fine previously with various distros.  Having read comments by other folks about how buggy systemd was, I didn't try to use it again.</font></font>
+  
+<font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">One of the big advantages of using linux has been that it didn't need the latest and greatest hardware to perform well. That is no longer the case since Lennart Pottering &amp; Kay Sievers foisted systemd (lennartkayx) into the kernel for Redhat.  They promoted it as a new init system that speeds up booting; it was said to be a replacement for SysVinit, Upstart, OpenRC, runit;  but they did not say that it does so much more, such as having logs be binary.  </font></font>
+
+<font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">I do not like this.  Some people do.  I compare this to the vi vs. emacs controversy but I can not think of a distro that doesn't offer both.</font></font>
+
+<font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">wikipedia</font></font>
+ <font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">contains a multi-color chart showing that the systemd so-called “init” program does a lot more than just starting the OS and waiting for state change or shutdown.</font></font>
+ 
+<font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">That wreaks havoc with traditional rapid debugging. </font></font><font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">  </font></font>
+ 
+<font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">Since systemd provides more than other init's, I think the default should be a simpler init, with an option at boot time to boot with systemd or other init program, rather than have default of systemd and force user who neither needs nor wants it to figure out how to get rid of it.  With init as default, older hardware could run newer distros, not just the few available without systemd now. The most popular without systemd are probably slackware based, antiX based, and some of the puppy family.  I expect devuan, constructed by former debian developers to eventually become most used.</font></font>
+
+<font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">MY SELECTION</font></font>
+
+<font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">So when the xubuntu 12.04 I was using was coming to end of long-term security support, I had to choose what new distro I would hop to that didn't use systemd.  Looking at the list of distros on &quot;without-systemd.org&quot; and trying some I hadn't heard of that looked promising, I determined that my temporary choice would be antiX with the hope that devuan would be the basis for it soon.  Slackware, gentoo, pclinuxos, puppy, etc. were all possibilities but I settled on antiX for several reasons.  Being a distro-hopper, I wanted 32-bit OS so that I could try live on my EEEPC901 netbook before installing 64-bit OS on my 64-bit box.  I wanted good support; the friendly forum provided such.  I wanted a development team, not just a one person show even though anticapitalista in Greece does the heavy lifting.  </font></font>
+
+
+ <font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">PRACTICALITIES</font></font>
+
+<font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">I had my home directory on a separate partition for years.  Not only did this make previous distro upgrades easier  but it really proved worthwhile now since xfce configuration was stored there.</font></font>
+
+<font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">By default, antiX lets one choose rox-fluxbox, space-fluxbox, fluxbox, herbluftswm, rox-icewm, space-icewm, icewm, rox-jwm, space-jwm, jwm by hitting F1 to cycle to your choice when logging in. </font></font>
+<font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">Some of the features I wanted to carry over that weren't in default antiX were</font></font>
+<font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">1)  XFCE4  desktop environment,        2) alpine mail client,     3) virtualbox that would pick up previous work</font></font>
+
+<font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">1)  though xfce4 was not listed in the login choices, I could install it and its dependencies with synaptic package manager after I logged in.</font></font>
+
+<font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">Then, &quot;sudo mount /dev/sdnx /home&quot;  where n is device and x is partition.</font></font>
+          <font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">&quot;logout&quot;      </font></font>
+         <font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">&quot;login&quot;            but cycle F1 until xfce is option</font></font>
+<font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">Grabbed my previous xfce4 settings from the old/new /home and I had almost exactly the desktop screen I had using xubuntu 12.04.  </font></font>
+<font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">I did have to grab the xfce4-weather-plugin, put it on the panel, and let it find Seattle so that I could get temperature, weather, etc. </font></font>
+
+<font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">2) Trying to get alpine mail client via synaptic didn't work immediately.  After a little thought, I added &quot;testing&quot; </font></font>
+
+<font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">deb http://iso.mxrepo.com/antix/testing/ testing main nosystemd</font></font>
+<font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">to the repository list and grabbed alpine just fine.  I could again use alpine for email.</font></font>
+
+<font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">3)  virtualbox was the biggest problem.  VB installed OK but wouldn't read my previous machines usage.   It finally dawned on me that since the virtualbox repository version was based on debian &quot;stretch&quot;, which uses systemd, that was the problem.  My solution was to add the repository corresponding to xubuntu 12.04, &quot;precise&quot;, from virtualbox website.  (When writing this, I realized that I could also have grabbed the virtualbox repository version corresponding to  debian &quot;wheezy&quot;.)</font></font>
+<font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">So I uninstalled the &quot;stretch&quot; version and let synaptic install the &quot;precise&quot; version.  Now there was no longer a problem accessing my previous VB machines; my computer worked as I wanted it to without systemd. </font></font>
+
+<font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">When I installed  antiX-17.1 on a different computer, synaptic could grab alpine directly without having to add testing repository.</font></font>
+
+<font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">What about security you may ask.  Since it uses debian (but I hope devuan soon),  </font></font>
+
+<font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">deb http://security.debian.org/ stretch/updates non-free contrib main    </font></font>
+
+<font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">&quot;sudo apt-get update &amp;&amp; sudo apt-get upgrade&quot; solves that problem.</font></font>
+ </pre><p class="western" style="margin-bottom: 0in; border: none; padding: 0in">
+<span style="font-variant: normal"><font color="#000000"><font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">S</span></span></span></font></font></font></span><font face="Nimbus Roman No9 L, Times New Roman"><font size="5" style="font-size: 18pt">o
+although I am pleased now with my avoidance of lennartkayx (systemd)
+distros, I sincerely hope the devuan developers, and the antiX team,
+can continue modifying debian into devuan that effectively removes
+libsystemd dependencies.</font></font></p>
+</body>
+</html>

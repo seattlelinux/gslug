@@ -1,0 +1,436 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.0.3.2 (Linux)"/>
+	<meta name="author" content="fnharvey "/>
+	<meta name="created" content="2015-07-24T13:33:47"/>
+	<meta name="changedby" content="fnharvey "/>
+	<meta name="changed" content="2018-07-31T14:19:37.814926400"/>
+	<style type="text/css">
+		@page { margin: 0.79in }
+		p { margin-bottom: 0.08in; direction: ltr; color: #000000; orphans: 0; widows: 0 }
+		p.western { font-family: "Times New Roman", serif; font-size: 12pt; so-language: en-US }
+		p.cjk { font-family: "Droid Sans Fallback"; font-size: 12pt; so-language: zh-CN }
+		p.ctl { font-family: "Lohit Hindi"; font-size: 12pt; so-language: hi-IN }
+		a:link { so-language: zxx }
+	</style>
+</head>
+<body lang="en-US" text="#000000" dir="ltr">
+<p class="western" align="left" style="margin-bottom: 0in"><span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="2" style="font-size: 11pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">systemd
+was promoted as an init system that would speed up, modernise and
+simplify booting. However:</span></span></span></font></font></font></span><br/>
+<br/>
+<span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="2" style="font-size: 11pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">-
+It has not simplified it. With systemd things have become more
+complicated and obfuscated.</span></span></span></font></font></font></span><br/>
+<br/>
+<span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="2" style="font-size: 11pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">-
+Speeding up is marginal or negative if compared to Upstart or even
+OpenRC.</span></span></span></font></font></font></span><br/>
+<br/>
+<span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="2" style="font-size: 11pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">-
+&quot;Modernisation&quot; is just a matter of taste for
+fashion-oriented fellows.</span></span></span></font></font></font></span><br/>
+<br/>
+<span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="2" style="font-size: 11pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">-
+More importantly, systemd is not an init system. It is a complete
+administrative layer that seeks full control of the computer and
+includes init tools as well as ever growing lots of other stuff.</span></span></span></font></font></font></span><br/>
+<br/>
+<span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="2" style="font-size: 11pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">In
+summary, they have lied to us and that is why there is so much
+mistrust.</span></span></span></font></font></font></span><br/>
+<br/>
+<span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="2" style="font-size: 11pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">If
+they had say from the very beginning &quot;look, we want to unify the
+Linux user-land administrative landscape and we are writing massive
+chunks of C code for so doing&quot;, things would have been very
+different. There would have been opposition, obviously, but not so
+much bitterness. But they have been cheating from the very beginning
+and therefore we cannot trust them.</span></span></span></font></font></font></span></p>
+<p class="western" align="left" style="margin-bottom: 0in"><br/>
+
+</p>
+<p class="western" align="left" style="margin-bottom: 0in"><br/>
+
+</p>
+<p class="western" align="left" style="margin-bottom: 0in"><br/>
+
+</p>
+<p class="western" align="left" style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<font face="Arial, Helvetica, sans-serif"><font size="2" style="font-size: 11pt">I'll
+post one more systemd comment before the week is up on this comment
+thread and it is regarding &quot;UNIX Philosophy&quot;, wherein I
+completely disregard &quot;UNIX Philosophy&quot; and mention &quot;Linux
+Philosophy&quot;.<br/>
+<br/>
+Linus Torvalds created the Linux kernel
+(now with many, many other contributing as well) whereupon it was
+promptly mixed with GNU utilities to make computer operating systems.
+Although some people think GNU/Linux is some sort of joke, it really
+isn't. And each &quot;distribution&quot; of Linux is a separate thing
+even though they are all often referred to as &quot;Linux&quot;.&nbsp;<br/>
+<br/>
+Once
+upon a time one could find Suse making a united administrative system
+with YaST, Mandrake with DrakeX, Red Hat had theirs, Slackware had
+it's scripts...<br/>
+So this is nothing new.<br/>
+What is new is an
+administrative system that seeks (entirely on purpose) to make itself
+indispensable and necessary by first presenting itself one way and
+then co-opting other functions so that it must be included in all
+Linux distributions.<br/>
+Systemd intends to lock major software into
+itself (so that the software will not function on BSD, Minix, or any
+other platform) and make itself necessary to any Linux distribution
+using those software packages. This is something that, I feel, is not
+&quot;Linux Philosophy&quot;.<br/>
+Are you seriously going to tell me
+that systemd could not have been written to do what it does without
+trying to make itself as necessary as the Linux kernel in any Linux
+distribution? No, this was done completely on purpose.<br/>
+<br/>
+I
+prefer that &quot;free software&quot; is free to be used in any way
+the user wants, not in the way they are directed to use it. I do know
+that the is an &quot;all Linux must be the same&quot; group, but I
+very much doubt that is really the same as the &quot;systemd group&quot;
+that we will never really know about.<br/>
+</font></font><br/>
+
+</p>
+<p class="western" align="left" style="margin-bottom: 0in"><br/>
+
+</p>
+<p class="western" align="left" style="margin-bottom: 0in"><br/>
+
+</p>
+<p class="western" align="left" style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<font face="Arial, Helvetica, sans-serif"><font size="2" style="font-size: 11pt">About
+systemd and the *NIX philosophy (by G.Wolfe Woodbury    on 2015-12-24
+20:05:55 GMT from North America)</font></font></p>
+<p class="western" align="left" style="margin-bottom: 0in"><br/>
+
+</p>
+<p class="western" align="left" style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<font face="Arial, Helvetica, sans-serif"><font size="2" style="font-size: 11pt">As
+an early instigator of (pre)SysVInit, I am quite familiar with the
+startup process. Systemd does its job and handles lots of &quot;under
+the hood&quot; tasks fairly quickly and (not so) easily. I actually
+do use systemd on a machine or two that run distros that use it.</font></font></p>
+<p class="western" align="left" style="margin-bottom: 0in"><br/>
+
+</p>
+<p class="western" align="left" style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<font face="Arial, Helvetica, sans-serif"><font size="2" style="font-size: 11pt">My
+main disagreements with systemd and its developers amount two two
+philosophical choices. 1) A program should do one task and do it well
+-- this is getting a bit harder, and systemd goes way beyond one task
+(system startup) and doesn't do it that well. 2) The developers are
+egotists and tend to dump scorn on the complainers, without regard to
+thinking about the non-expert users; &quot;If you don't like it, why
+don't you write your own&quot; was an (almost) direct quote from one
+early in the quarrels over systemd.</font></font></p>
+<p class="western" align="left" style="margin-bottom: 0in"><br/>
+
+</p>
+<p class="western" align="left" style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<font face="Arial, Helvetica, sans-serif"><font size="2" style="font-size: 11pt">I
+did write my own, way back in 1981, and at the time the processor
+speeds and programming techniques available made it an easy decision
+to &quot;punt&quot; certain tasks (such as sequencing the order of
+task startups) to the admin and the human mind. These days the
+processors are faster and programming techniques are available to
+solve the ordering problems with dependency declarations in the
+startup scripts. Systemd is not the only solution that does this but
+systemd goes way beyond just being a system boot solution and inserts
+itself into the daily administration of the system. This &quot;creeping
+featurism&quot; was long ago pointed out as a problem, and *NIX
+programs were deliberately encouraged to avoid this sprawl.</font></font></p>
+<p class="western" align="left" style="margin-bottom: 0in"><br/>
+
+</p>
+<p class="western" align="left" style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<font face="Arial, Helvetica, sans-serif"><font size="2" style="font-size: 11pt">The
+&quot;desktop environment&quot; phenomenon does demand a greater
+amount of integration, but DEs don't have to make a few programs do
+all the work, they can, if properly designed, still adhere to the
+trait of multiple programs working together, with each program doing
+a well defined set of tasks and doing them well.</font></font></p>
+<p class="western" align="left" style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" align="left" style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" align="left" style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" align="left" style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" align="left" style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" align="left" style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" align="left" style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" align="left" style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" align="left" style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" align="left" style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" align="left" style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" align="left" style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" align="left" style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" align="left" style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" align="left" style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" align="left" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<font color="#222222"><font face="Arial, Helvetica, sans-serif"><font size="3" style="font-size: 12pt">Technically,
+as designed, systemd seems to be fine, but all of the problems I've
+had with systemd have related to three main issues, none of which
+have to do with technical design:</font></font></font></p>
+<p class="western" style="margin-top: 0.05in; margin-bottom: 0.05in; border: none; padding: 0in; font-weight: normal">
+<font color="#222222"><font size="3" style="font-size: 12pt">1)
+systemd requires a massive amount of documentation because it throws
+away everything that we've been doing for 40+ years in UNIX with
+regards to system initialization. No matter how good your design is,
+if you haven't completely documented everything, your design is not
+useable. Let me give you one very simple example. Since 1995 (21
+years), in order to diagnose kernel problems, people have done tail
+-f /var/log/messages. I had a failing USB hard drive two weeks ago.
+It was not easy for me to find the equivalent of tail -f
+/var/log/messages to watch what new log messages would appear when I
+repeatedly plugged and unplugged the device. You can use some tool to
+bring up existing logs with less but this is not what I want at all.
+I want to see new logs as they appear. This tool appears to have been
+written by someone who casually browses through log files with less,
+but who hasn't done much of any hardware debugging.</font></font></p>
+<p class="western" style="margin-top: 0.05in; margin-bottom: 0.05in; border: none; padding: 0in; font-weight: normal">
+<font color="#222222"><font size="3" style="font-size: 12pt">2)
+systemd hasn't taken the UNIX approach of carefully doing a little
+bit at a time. It tries to be one massive thing that is foisted upon
+you. Think of your vehicle. I don't care what type of vehicle you
+own. Your steering wheel works the same way. Your cruise control
+works the same way. Your windshield wipers work the same way. You
+have a gas pedal and brake pedal that have worked the same way for
+100 years. You could easily operate a car radio from a 1950's
+classic. Basically, you could even operate a Model T with some level
+of difficulty. systemd is the equivalent of foisting a space ship
+upon us with a different way of controlling everything. The space
+ship can take us to other planets, but it sometimes crashes because
+it's difficult to control.</font></font></p>
+<p class="western" style="margin-bottom: 0in; border: none; padding: 0in">
+<font color="#222222"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">3)
+All complex systems have bugs. Inexperienced programmers tend to do
+rewrites all the time because they're too lazy to learn what was
+there and take the time to fix it. Rather, they do what they were
+trained to do in school, always write something new from scratch.
+Experienced programmers know how to become comfortable with existing
+systems and fix them. The attitude of let's rewrite this or let's
+rewrite that because we're much smarter than&nbsp;</span></font></font><em><font color="#222222"><font size="3" style="font-size: 12pt"><i><span style="font-weight: normal">those</span></i></font></font></em><font color="#222222"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">&nbsp;people
+is both the atittude of inexperienced programmers and petulent
+teenagers when referring to grown ups. We now have this incredibly
+complex system with tons of bugs and the grown ups who've been doing
+programming for decades have to step in and figure out just what
+these people have done and make it work well.</span></font></font></p>
+<p class="western" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0in; border: none; padding: 0in">
+<span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="2" style="font-size: 11pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">The
+thing is, SysV was </span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="2" style="font-size: 11pt"><span style="letter-spacing: normal"><i><span style="font-weight: normal">dumb</span></i></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="2" style="font-size: 11pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">.
+All it did was execute a bunch of scripts in order, that's it.<br/>
+<br/>
+Well,
+as it turns out, being dumb can also mean being resilient! It was
+very hard to break sysV, and even if you did, you only needed it once
+- during bootup. Any failure in sysV stopped mattering once the
+bootup was complete (switching run levels aside).<br/>
+<br/>
+That's
+where the problem of systemd becomes apparent to me.<br/>
+<br/>
+You
+</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="2" style="font-size: 11pt"><span style="letter-spacing: normal"><i><span style="font-weight: normal">NEED</span></i></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="2" style="font-size: 11pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+systemd for the whole duration of the system. Whereas the stupid sysv
+only had to survive for a few minutes at most, systemd needs to be
+stable for 300+ days (the mean time between two reboots in our
+environment). It's literally a system critical component - any
+failure in systemd equals or is even worse than a kernel panic. Once
+systemd PID1 fails, you can not recover. You are very, very
+hosed.<br/>
+<br/>
+Now, the proposed features of systemd make sense.
+But in its current implementation, I only find it useful for driving
+people away from using Linux in mission critical environments. </span></span></span></font></font></font></span>
+</p>
+<p class="western" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<font face="Arial, Helvetica, sans-serif"><font size="2" style="font-size: 11pt">WARNING
+- take with salt, second hand.<br/>
+<br/>
+Most of what I read about
+is when SystemD does fail, it fails spectacularly in undefined ways
+that are hard to figure out. The rest of the time it's just
+peachy.<br/>
+<br/>
+What I've gotten out of it is that the makers of
+SystemD don't appreciate well defined failure cases. As a system's
+designer, most of what I do is defining failure cases, how to quickly
+identify them and how to fix them. Anyone can make a highly
+horizontally scalable system, kids stuff. The hard part is making a
+system that you can fix in a timely manner when things go wrong.<br/>
+<br/>
+I
+have no first hand experience, I'm just saying this is the primary
+pattern that I am seeing in complaints from server admins.<br/>
+<br/>
+SystemD
+is not a bad idea, just a bad implementation. </font></font>
+</p>
+<p class="western" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0in; border: none; padding: 0in">
+<span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="3" style="font-size: 11pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>48</b></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="2" style="font-size: 11pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&nbsp;•&nbsp;</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="3" style="font-size: 11pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>@36
+systemd (by paoloschi on 2018-07-21 07:46:00 GMT from&nbsp;Italy)</b></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="2" style="font-size: 11pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><br/>
+</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="3" style="font-size: 11pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">&gt;
+If you prefer the old init system, then just use.</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="2" style="font-size: 11pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><br/>
+<br/>
+</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="3" style="font-size: 11pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">but
+a detail escapes you: you are free to use systemd without any
+interference from any other init sw and instead (me) we, who would
+like to &quot;just use other init&quot;, we find ourselves having to
+divincolate from a growing number of packages that still force us to
+install unwanted dependencies and various libraries belonging to
+systemd.</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="2" style="font-size: 11pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><br/>
+</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="3" style="font-size: 11pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">despite
+we are using a different init sw!</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="2" style="font-size: 11pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><br/>
+<br/>
+</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="3" style="font-size: 11pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Was
+this little detail known to you?</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="2" style="font-size: 11pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><br/>
+</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="3" style="font-size: 11pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Would
+you like to use systemd with the hassle of another sw init that
+forces you to install unnecessary sw and therefore &quot;harmful&quot;?</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="2" style="font-size: 11pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><br/>
+<br/>
+</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="3" style="font-size: 11pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">If
+your job was that of System Admin with the freedom to choose to only
+administer non-systemd installations (because you find that systemd
+complicates your daily tasks ...) ... nowadays you would be
+unemployed: systemd has propagated with the logic of the monopolist
+...&nbsp;</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="2" style="font-size: 11pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><br/>
+<br/>
+</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#000000"><font face="Arial, Helvetica, sans-serif"><font size="3" style="font-size: 11pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Therefore,
+do not come and talk to us about freedom of choice or equal
+opportunities.</span></span></span></font></font></font></span></p>
+</body>
+</html>
