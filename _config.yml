@@ -27,3 +27,4 @@ exclude:
   - Gemfile.lock
   - Dockerfile
   - notes.txt
+  - _posts/yyyy-mm-dd-template.markdown
