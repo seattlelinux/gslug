@@ -15,7 +15,7 @@ View it live at [https://gslug.org](https://gslug.org)
     ```
 1. Run jekyll to start a local server.
     ```
-	bundle exec jekyll serve -s source --baseurl ""
+	bundle exec jekyll serve 
     ```
 1. At this point you can view the website locally in your browser. 
     ```
