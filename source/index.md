@@ -12,7 +12,7 @@ layout: default
         Posted on {{ post.date | date: "%B %-d, %Y" }}
       </p>
  
-      <a href="{{ post.url | prepend: site.baseurl }}">
+      <a href="{{ post.url | relative_url }}">
   	    <h1 class="post-title">{{ post.title }}</h1>
       </a>
   
@@ -20,7 +20,7 @@ layout: default
         <div class="post-entry-container">
           <div class="post-entry">
     		{{ post.content | strip_html | xml_escape | truncatewords: site.excerpt_length }}
-    		<a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+    		<a href="{{ post.url | relative_url }}" class="post-read-more">[Read&nbsp;More]</a>
           </div>
         </div>
       {% endif %}
@@ -28,7 +28,7 @@ layout: default
     </article>
     {% endfor %}
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
 </div>
 
