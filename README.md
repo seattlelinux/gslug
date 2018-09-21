@@ -6,7 +6,7 @@ View it live at [https://gslug.org](https://gslug.org)
 1. Fork this repository.
 1. Make a local clone of the fork.
     ```
-    git clone git@gitlab.com:<yourname>/gslug.git
+    git clone git@github.com:<yourname>/gslug.git
     ```
 1. Work in the local clone `cd gslug`
 1. Install the required ruby gems to the local directory.
