@@ -10,8 +10,8 @@ title: GSLUG
 # email: seattlelinux@gmail.com
 description: the Greater Seattle Linux Users Group
 # twitter_username: jekyllrb
-# github_username:  seattlelinux
-gitlab_username:  seattlelinux
+github_username:  seattlelinux
+# gitlab_username:  seattlelinux
 irc_username:  gslug
 
 # Excerpt Word Length
