@@ -22,12 +22,8 @@ View it live at [https://gslug.org](https://gslug.org)
 	localhost:4000
     ```
 1. Make changes and test in the local clone.
-1. When you are ready to publish your changes, create a new branch.
+1. Push the changes to github
     ```
-    git branch patch
-    ```
-1. Push the new branch up to the fork on gitlab.
-    ```
-    git push origin patch
+    git push origin master
     ```
 1. Request a merge of your new branch back to this repository.
