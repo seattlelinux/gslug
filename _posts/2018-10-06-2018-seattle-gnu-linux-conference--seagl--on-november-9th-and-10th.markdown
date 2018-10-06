@@ -9,7 +9,7 @@ tags:
 
 * Note that there will be no GSLUG meeting in November because many of our members will be attending SeaGL.
 * [SeaGL][seagl] is a grassroots technical conference dedicated to spreading awareness and knowledge about the GNU/Linux community and free/libre/open-source software/hardware. 
-* When: [Friday & Saturday, November 9 & 10, 2018 from 9:00 AM to 5:30 PM][schedule]
+* When: [Friday and Saturday, November 9 and 10, 2018 from 9:00 AM to 5:30 PM][schedule]
 * Where: [Seattle Central College][sccmap]
 
 [schedule]: https://osem.seagl.org/conferences/seagl2018/schedule
