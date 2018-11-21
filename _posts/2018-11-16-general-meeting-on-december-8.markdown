@@ -8,7 +8,7 @@ tags:
 ---
 
 * **Topic:** General discussion and problem solving.  
-* **Presentations:** Anyone interested in giving a talk or presentation is encouraged to do so.
+* **Presentations:** There will be an overview of and demo of the Duplicati backup system.  The demo will use a Raspberry Pi to manage the archived data.  Anyone else interested in giving a talk or presentation is encouraged to do so.
 * **When:** Saturday, December 8, 2018 from 12:00 PM to 4:00 PM .
 * **Where:** North Seattle College, Education Building, room 1840A .
 
