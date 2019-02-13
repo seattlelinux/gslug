@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "General Meeting on February 9 2019"
+title: "General Meeting on February 16"
 date: 2019-01-18 19:12:57 +0000
 published: true
 show_synopsis: true
 tags:
 ---
+* **NOTE:** If road conditions are bad, this meeting will be cancelled.  Check here and check email for updates.  Be safe.
 * **Topic:** General discussion and problem solving.  
-* **When:** Saturday, February 9, 2019 from 12:00 PM to 4:00 PM .
+* **When:** Saturday, February 16, 2019 from 12:00 PM to 4:00 PM .
 * **Where:** North Seattle College, Education Building, room 1840A .
 
 If you drive, take N 92nd and turn north into the easternmost parking lot.  Parking is free on Saturdays and there is usually plenty available.
