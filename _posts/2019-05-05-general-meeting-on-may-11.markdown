@@ -6,7 +6,7 @@ published: true
 show_synopsis: true
 tags:
 ---
-* **Topic:** General discussion and problem solving.  
+* **Topic:** Creating a multi distro, multi boot, USB stick.
 * **When:** Saturday, May 11, 2019 from 12:00 PM to 4:00 PM .
 * **Where:** North Seattle College, Education Building, room 1840A .
 
