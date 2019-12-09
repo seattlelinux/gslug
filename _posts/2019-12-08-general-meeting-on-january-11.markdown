@@ -8,7 +8,7 @@ tags:
 ---
 
 
-* **Topic:** To Be Announced
+* **Topic:** To Be Announced.   Anyone who wants to make a presentation is welcome to do so.
 * **When:** Saturday, January 11, 2020 from 12:00 PM to 4:00 PM .
 * **Where:** North Seattle College, Education Building, room 1840A .
 
